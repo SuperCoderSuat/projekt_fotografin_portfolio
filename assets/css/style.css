@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("../font/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url("../font/Roboto-Bold.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Roboto-Regular";
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+header, main, footer {
+    padding-inline: 166px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+nav a>img:nth-of-type(1) {
+    /* width: 138px; */
+    height: 22px;
+}
+
+nav a>img:nth-of-type(2) {
+    width: 27px;
+    height: 27px;
+}
+
+.header_content {
+    width: 77%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+header div>h1 {
+    padding-bottom: 50px;
+}
+
+.container {
+    columns: 3;
+    column-gap: 20px;
+    margin-bottom: 20px;
+}
+
+.container .box {
+    margin-bottom: 20px;
+}
+
+footer {
+    padding-top: 112px;
+    padding-bottom: 132px;
+    background-color: #AFAFAF;
+}
+
+.footer ul>li {
+    list-style-type: none;
+    font-size: 1.125rem;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.footer ul {
+    line-height: 25px;
+}
+
+.footer ul:nth-of-type(1) {
+    grid-column: 1 / 3;
+}
+
+.footer ul:nth-of-type(2) {
+    grid-column: 3 / 5;
+}
+
+.footer ul:nth-of-type(3) {
+    grid-column: 5 / 7;
+}
+
+h1, h2 {
+    font-size: 2.25rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h2 {
+    padding-top: 64px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.footer_form {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 1.125rem;
+}
+
+form input, form textarea {
+    margin-bottom: 20px;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: none;
+    padding: 5px;
+}
+
+form input[type="submit"] {
+    border: none;
+    background: none;
+    padding: 10px;
+    background-color: #EBEAE9;
+}
